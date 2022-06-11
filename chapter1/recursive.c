@@ -42,3 +42,6 @@ int check() {
     }
     return depth;
 }
+
+/* We tend to use short names for local variables,
+especially loop indices, and longer names for external variables. */

@@ -48,10 +48,8 @@ int getline(void) {
          && (c = getchar()) != EOF && c != '\n'; ++i) {
         line[i] = c;
     }
-    if (c == '\n') {
-        line[i] = c;
-        ++i;
-    }
+    if (c == '\n')
+        line[i++] = c;
     line[i] = '\0';
     return i;
 }
